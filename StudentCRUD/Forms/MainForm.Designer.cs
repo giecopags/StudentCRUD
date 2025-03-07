@@ -121,6 +121,9 @@
             this.textEditAge.Location = new System.Drawing.Point(330, 105);
             this.textEditAge.MenuManager = this.ribbonControl1;
             this.textEditAge.Name = "textEditAge";
+            this.textEditAge.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.textEditAge.Properties.MaskSettings.Set("MaskManagerSignature", "allowNull=False");
+            this.textEditAge.Properties.MaskSettings.Set("mask", "d");
             this.textEditAge.Size = new System.Drawing.Size(100, 20);
             this.textEditAge.TabIndex = 4;
             // 
@@ -226,6 +229,7 @@
             this.simpleButtonEdit.Size = new System.Drawing.Size(72, 23);
             this.simpleButtonEdit.TabIndex = 16;
             this.simpleButtonEdit.Text = "EDIT";
+            this.simpleButtonEdit.Click += new System.EventHandler(this.simpleButtonEdit_Click);
             // 
             // simpleButtonDelete
             // 
@@ -234,6 +238,7 @@
             this.simpleButtonDelete.Size = new System.Drawing.Size(68, 23);
             this.simpleButtonDelete.TabIndex = 17;
             this.simpleButtonDelete.Text = "DELETE";
+            this.simpleButtonDelete.Click += new System.EventHandler(this.simpleButtonDelete_Click);
             // 
             // gridControlStudent
             // 
